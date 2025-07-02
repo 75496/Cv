@@ -1,0 +1,129 @@
+html{
+  overscroll-behavior-y: smooth;}
+*{
+  
+  font-family: 'Montserrat' !important;
+  font-optical-sizing: auto !important;
+  font-weight: <weight> !important;
+  font-style: normal !important;
+}
+#sobre{
+  background-color: #001b3f;
+}
+header{
+  z-index: 100000;
+  background-color: #052857;
+
+}
+    section{
+      height: 100vh;
+    }
+    body {
+      overflow-x: hidden !important;
+      width: 100vw;
+      background: url(image1.png);
+      background-size: 120% 100%;
+      animation: gradient 15s ease infinite;
+    }
+    .titulo{
+      letter-spacing: 24px;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .text-3xl{
+      border-bottom: 2px solid #fff;
+    }
+   
+
+   .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #001b3fb0;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            margin-bottom: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .nav-item span {
+            color: #333;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        .nav-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .nav-item.active {
+            opacity: 1;
+        }
+        
+        .nav-item.active span {
+            color: #0066ff;
+            font-weight: bold;
+        }
+        
+        /* Secciones de ejemplo */
+        section {
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .nav-item span {
+                font-size: 10px;
+            }
+            
+            .nav-item img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+         @media (max-width: 700px) {
+    nav {
+      display: none;
+    }
+    .bottom-nav {
+            display: block;
+            width: 100vw;
+        }
+
+  }

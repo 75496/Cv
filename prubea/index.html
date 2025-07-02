@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Suave Test</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      height: 100vh;
+      padding: 40px;
+      font-size: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      background: white;
+      width: 100%;
+      padding: 10px;
+    }
+
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#uno">Ir a Uno</a> |
+    <a href="#dos">Ir a Dos</a> |
+    <a href="#tres">Ir a Tres</a>
+  </nav>
+
+  <div style="height: 60px;"></div> <!-- espacio para menú fijo -->
+
+  <section id="uno">Sección Uno</section>
+  <section id="dos">Sección Dos</section>
+  <section id="tres">Sección Tres</section>
+
+</body>
+</html>
