@@ -7,6 +7,11 @@ html{
   font-weight: <weight> !important;
   font-style: normal !important;
 }
+html, body { 
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
 #sobre{
   background-color: #001b3f;
 }
