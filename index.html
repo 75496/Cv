@@ -66,10 +66,25 @@
       bottom: 115px;
     left: 15px;
   z-index: 100;
+  transition: all ease 0.5s
 }
 .whatsapp-float img {
   width: 60px;
   height: 60px;
+}
+#pdf {
+  padding: 20px;
+  background-color: #00000069;
+  border-radius: 20px;
+  transition: all ease 0.5s; /* transición suave para todo */
+}
+
+#pdf:hover {
+  background-color: #000;         /* cambia de color */
+  transform: translateY(-10px);   /* se mueve hacia arriba */
+}
+.whatsapp-float:hover{
+  transform: translateY(-20px)
 }
 </style>
 
@@ -77,7 +92,7 @@
 <body class="text-white overflow-x-hidden" >
 
   <!-- Header -->
-  <header class="flex justify-between fixed w-full p-6">
+  <header id="header" class="flex justify-between fixed w-full p-6">
     <h1 class="text-2xl">Pedro Ordoñez</h1>
     <nav class="space-x-6">
       <a href="#sobre" class="hover:underline">Sobre mí</a>
@@ -96,14 +111,15 @@
   <span class="letter delay-2">D</span>
   <span class="letter delay-3">R</span>
   <span class="letter delay-4">O</span>
+  <span class="w-full h-0"></span>
   <!-- MODERNO -->
-  <span class="letter delay-10 text-purple-300">O</span>
-  <span class="letter delay-11 text-purple-300">R</span>
-  <span class="letter delay-12 text-purple-300">D</span>
-  <span class="letter delay-13 text-purple-300">O</span>
-  <span class="letter delay-14 text-purple-300">Ñ</span>
-  <span class="letter delay-15 text-purple-300">E</span>
-  <span class="letter delay-16 text-purple-300">Z</span>
+  <span class="letter delay-10">O</span>
+  <span class="letter delay-11">R</span>
+  <span class="letter delay-12">D</span>
+  <span class="letter delay-13">O</span>
+  <span class="letter delay-14">Ñ</span>
+  <span class="letter delay-15">E</span>
+  <span class="letter delay-16">Z</span>
 </h2>
 
     <p data-aos="fade-left" data-aos-duration="2000" class="mt-6 text-xl max-w-xl">Diseñador, desarrollador creativo digital con visión innovadora y enfoque profesional.</p>
@@ -122,12 +138,12 @@ Mi corta edad no limita mis capacidades; al contrario, refleja disciplina, pasi�
     <h3 class="text-3xl mb-4">Experiencia</h3>
     <ul class="space-y-4">
       <li>
-        <strong>Google Business View – Desarrollador Web - Guatemala | enero 2025 – Actualidad</strong><br><br><br/>
--	Desarrollo de sitios y aplicaciones web con HTML, CSS y JavaScript, aplicando patrones de diseño y buenas prácticas.<br>
--	Manejo y análisis de datos para integrarlos en funcionalidades web.<br>
--	Creación de juegos web interactivos.<br>
--	Participación en proyectos inmobiliarios digitales, optimizando procesos y mejorando la experiencia de usuario.<br>
--	Resolución de problemas técnicos con enfoque en eficiencia, escalabilidad e innovación.<br>
+        <strong>Google Business View – Desarrollador Web - Guatemala | enero 2025 – Actualidad</strong><br>
+- Desarrollo de sitios y aplicaciones web con HTML, CSS y JavaScript, aplicando patrones de diseño y buenas prácticas.<br>
+- Manejo y análisis de datos para integrarlos en funcionalidades web.<br>
+- Creación de juegos web interactivos.<br>
+- Participación en proyectos inmobiliarios digitales, optimizando procesos y mejorando la experiencia de usuario.<br>
+- Resolución de problemas técnicos con enfoque en eficiencia, escalabilidad e innovación.<br>
 
       </li>
     </ul>
@@ -137,19 +153,19 @@ Mi corta edad no limita mis capacidades; al contrario, refleja disciplina, pasi�
     <h3 class="text-3xl mb-4">Proyectos</h3>
     <p>
 -Sistema web para gestión de datos inmobiliarios.<br>
--	Juegos web desarrollados en JavaScript.<br>
--	Automatización de procesos con Python y SQL<br>
+- Juegos web desarrollados en JavaScript.<br>
+- Automatización de procesos con Python y SQL<br>
 </p>
   </section>
   
   <section id="HabilidadesTecnicas" data-aos="fade-right" data-aos-duration="2000" id="proyectos" class="p-10 bg-black bg-opacity-40 backdrop-blur">
     <h3 class="text-3xl mb-4">Habilidades Técnicas</h3>
     <p>
--	Lenguajes de programación: HTML, CSS, JavaScript, Python, SQL<br>
--	Desarrollo web: Frontend, patrones de diseño, integración de datos<br>
--	Bases de datos: Diseño, modelado y consultas SQL<br>
--	Proyectos personales: Juegos web, sistemas inmobiliarios, aplicaciones interactivas<br>
--	Otras competencias: Autodidacta, análisis crítico, resolución de problemas complejos<br>
+- Lenguajes de programación: HTML, CSS, JavaScript, Python, SQL<br>
+- Desarrollo web: Frontend, patrones de diseño, integración de datos<br>
+- Bases de datos: Diseño, modelado y consultas SQL<br>
+- Proyectos personales: Juegos web, sistemas inmobiliarios, aplicaciones interactivas<br>
+- Otras competencias: Autodidacta, análisis crítico, resolución de problemas complejos<br>
 
 
 </p>
@@ -157,10 +173,10 @@ Mi corta edad no limita mis capacidades; al contrario, refleja disciplina, pasi�
   <section id="HabilidadesPersonales" data-aos="fade-right" data-aos-duration="2000" id="proyectos" class="p-10 bg-black bg-opacity-40 backdrop-blur">
     <h3 class="text-3xl mb-4">Habilidades Personales</h3>
     <p>
--	Alta capacidad de aprendizaje<br>
--	Creatividad e innovación constante<br>
--	Compromiso y responsabilidad<br>
--	Trabajo en equipo y comunicación efectiva- Enfoque en resultados y mejora continua<br>
+- Alta capacidad de aprendizaje<br>
+- Creatividad e innovación constante<br>
+- Compromiso y responsabilidad<br>
+- Trabajo en equipo y comunicación efectiva- Enfoque en resultados y mejora continua<br>
 
 
 </p>
@@ -168,8 +184,8 @@ Mi corta edad no limita mis capacidades; al contrario, refleja disciplina, pasi�
   <section id="idiomas" data-aos="fade-right" data-aos-duration="2000" id="proyectos" class="p-10 bg-black bg-opacity-40 backdrop-blur">
     <h3 class="text-3xl mb-4">Idiomas</h3>
     <p>
--	Español: Nativo <br>
--	Inglés: Básico (lectura de documentación técnica, en proceso de mejora)<br>
+- Español: Nativo <br>
+- Inglés: Básico (lectura de documentación técnica, en proceso de mejora)<br>
 
 </p>
   </section>
@@ -177,8 +193,9 @@ Mi corta edad no limita mis capacidades; al contrario, refleja disciplina, pasi�
 
   <section id="contacto" data-aos="fade-up" data-aos-duration="2000" id="contacto" class="p-10">
     <h3 class="text-3xl mb-4">Contacto</h3>
-    <p>Correo: tuemail@ejemplo.com</p>
-    <p>LinkedIn / GitHub / Behance / Portfolio</p>
+      <a id="pdf" href="cv.pdf" download="MiDocumento.pdf">
+  📥 Descargar PDF
+</a>
   </section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
@@ -193,6 +210,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+window.addEventListener("scroll", function() {
+  const topbar = document.getElementById("header");
+  if (window.scrollY > 50) { // cuando baja más de 50px
+    topbar.classList.add("scrolled");
+  } else {
+    topbar.classList.remove("scrolled");
+  }
+});
+
 </script>
 
 <div class="bottom-nav">
@@ -218,7 +246,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             </a>
         </div>
   </div>
-         <a href="https://wa.me/50212345678" class="whatsapp-float" target="_blank">
+         <a href="https://wa.me/50243717214" class="whatsapp-float" target="_blank">
   <img src="./iconos/whatsapp.png" alt="WhatsApp">
 </a>
 </body>

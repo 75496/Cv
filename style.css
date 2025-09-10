@@ -17,9 +17,17 @@ html, body {
 }
 header{
   z-index: 100000;
-  background-color: #052857;
   max-width: 100vw !important;
+  background-color: #0000003d;
+  transition: all ease 0.5s
 
+}
+
+
+
+.scrolled{
+
+  background-color: #001127 !important;
 }
     section{
       height: 100vh;
