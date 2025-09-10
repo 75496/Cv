@@ -30,6 +30,7 @@ header{
   background-color: #001127 !important;
 }
     section{
+      overflow: hidden !important;
       height: 100vh;
     }
     body {
@@ -112,6 +113,8 @@ header{
         
         /* Secciones de ejemplo */
         section {
+          
+            overflow: hidden !important;
             height: 100vh;
             padding: 20px;
             display: flex;
@@ -139,5 +142,6 @@ header{
             display: block;
             width: 100vw;
         }
+
 
   }
